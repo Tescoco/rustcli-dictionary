@@ -44,16 +44,6 @@ fn print_meaning(meanings: Vec<&Meanings>) {
         for definition in &meaning.definitions {
             println!("💿 {}", definition.definition);
         }
-        // println!(
-        //     "🕺 {}",
-        //     track
-        //         .album
-        //         .artists
-        //         .iter()
-        //         .map(|artist| artist.name.to_string())
-        //         .collect::<String>()
-        // );
-        // println!("🌎 {}", track.external_urls.spotify);
         println!("---------")
     }
 }
@@ -91,6 +81,5 @@ async fn main() {
         other => {
             panic!("Uh oh! Something unexpected happened: {:?}", other);
         }
-    }; /**/
-    // println!("{:?}", result);
+    };
 }
